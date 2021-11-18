@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Raleway', sans-serif; 
+    overflow: auto;
+    overflow-x: hidden;
+}
+/* Header start */
+.navbar{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+.navbar .container{
+    margin: auto 10%;
+    padding-top: 20px;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .container h2{
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+.navbar .container .navbar-title span{
+    font-weight: 800;
+}
+.navbar .container .nav ul.nav-links li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar .container .nav ul.nav-links li:first-child a{
+    font-weight: 700;   
+}
+.navbar .container .nav ul.nav-links li a{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1.1px;
+    line-height: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+/* Header ends */
+
+/* Intro section start */
+#intro{
+    background-image: url("/assets/images/annie-spratt-6a3nqQ1YwBw-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: -50px;
+}
+#intro .container{
+    position: relative;
+    top: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#intro .container h2{
+    color: white;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 1.3px;
+    font-size: 30px;
+}
+#intro .container h1.typing{
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    line-height: 2;
+}
+#intro .container .btn{
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 45%;  
+}
+#intro .container .btn:hover{
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* Intro section edn */
+/*        About section start      */
+#about{
+    width: 100%;
+}
+#about .container{
+    max-width: 80%;
+    margin: auto 10%;
+    margin-top: 100px;
+}
+#about .title{
+    text-align: center;
+}
+#about .title h2 span{
+    color: gray;
+    font-weight: 400;
+}
+#about .title h2{
+    position: relative;
+    line-height: 25px;
+    font-size: 30px;
+}  
+#about .title h2::after{
+content: "";
+position: absolute;
+width: 45px;
+height: 1px;
+background-color: black;
+top: 45px;
+left: 555px;
+}
+#about .title p{
+    color: gray;
+    margin-top: 40px;
+    font-size: 14px;
+    letter-spacing: 1.5;
+}
+#about .content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+#about .content .image{
+    max-width: 50%;
+}
+#about .content .bio{
+    max-width: 50%;
+    margin-left: 30px;
+    padding: auto 15px;
+}
+#about .content .bio h3 span{
+    font-weight: 300;
+}
+#about .content .bio p{
+    color: gray;
+    font-size: 14px;
+    padding-top: 15px;
+    letter-spacing: 1.8px;
+    line-height: 1.6;
+}
+#about .content .bio .btn-about{
+    background-color: #333;
+    height: 40px;
+    width: 140px;
+    border: none;
+    margin-top: 65px;
+}
+#about .content .bio .btn-about a{
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+#about .content .bio .btn-about:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+/*        About section end      */
+
+/*       What i Do Section start       */
+#what-i-do{
+    width: 100%;
+}
+#what-i-do .container{
+    width: 80%;
+    margin: 200px auto 0px auto;
+}
+#what-i-do .container .title{ 
+    text-align: center;
+}
+#what-i-do .container .title h2{
+    line-height: 1.8;
+    font-weight: 800;
+    position: relative;
+
+}
+#what-i-do .container .title h2::after{
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 1px;
+    background-color: black;
+    top: 60px;
+    left: 555px;
+}
+#what-i-do .container .title h2 span{
+    color: gray;
+    font-weight: 300;
+}
+#what-i-do .container .title p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    margin-top: 50px;
+}
+#what-i-do .container .row{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 50px;
+}
+#what-i-do .container .row .col i{
+    font-size: 30px;
+}
+#what-i-do .container .row .col h3{
+    font-weight: 800;
+    margin-top: 30px;
+    font-size: 20px;
+}
+#what-i-do .container .row .col p{
+    margin-top: 30px;
+    color: gray;
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block;
+    max-width: 80%;
+    line-height: 1.7;
+}
+body hr{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+/*        What i Do Section  ends       */
+
+/*        My- works section start           */
+#my-works{
+    width: 100%;
+    margin-top: 100px;
+}
+#my-works .container{
+    max-width: 80%;
+    margin: auto 10%;
+}
+#my-works .container .title{
+    text-align: center;
+}
+#my-works .container .title h2{
+    font-weight: 800;
+    position: relative;
+    line-height: 25px;
+    display: inline-block;
+    font-size: 30px;
+}
+#my-works .container .title h2::after{
+    content: "";
+    background-color: black;
+    height: 1px;
+    width: 50px;
+    position: absolute;
+    top: 50px;
+    left: 45px;    
+}
+
+#my-works .container .title span{
+    color: gray;
+    font-weight: 300;
+}
+#my-works .container .title p{
+    margin-top: 35px;
+    font-weight: 400;
+    color: gray;
+    font-size: 14px;
+}
+#my-works .container .title .items{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#my-works .container .title .items .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+#my-works .container .title .items .item i{
+    font-size: 30px;
+}
+#my-works #item-name{
+    margin-top: 10px;
+}
+#my-works #item-name::first-letter{
+    color: black;
+}
+#my-works .container .container-body .row {
+    display: flex;
+    justify-content: space-between;
+}
+#my-works .container .container-body{
+    margin-top: 40px;
+}
+#my-works .container .container-body .row .col {
+    position: relative;
+    margin: 5px -10px;
+}
+.overlay{
+    display: none;
+}
+#my-works .container .container-body .row .col img{
+    max-width: 377px;
+    max-height: 258px;
+}
+#my-works .container .container-body .row .col img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+#my-works .container .author {
+    text-align: center;
+    margin: 100px auto 0;
+}
+#my-works .container .author .icon{
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+#my-works .container .author .icon i{
+    font-size: 20px;
+}
+#my-works .container .author p.content{
+    color: gray;
+    font-weight: 400;
+    line-height: 1.6;
+    display: inline-block;
+    max-width: 55%;
+    margin-top: 30px;
+}
+#my-works .container .author h4{
+    margin-top: 30px;
+}
+#my-works .container .author p.description{
+    margin-top: 30px;
+    color: gray;
+    font-size: 15px;
+}
+/*        My- works section ends           */
+
+/*       Form section start                */
+#contact{
+    width: 100%;
+}    
+#contact .container{
+    max-width: 80%;
+    margin: auto 10%;
+}
+#contact .container .row .title{
+    position: relative;
+    text-align: center;
+}
+#contact .container .row .title span{
+    color: gray;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+#contact .container .row .title h2{
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+#contact .container .row .title h2::after{
+    content: "";
+    background-color: black;
+    width: 90px;
+    height: 1px;
+    position: absolute;
+    top: 45px;
+    left: 525px;
+}
+#contact .container .row .title p{
+    margin-top: 30px;
+    color: gray;font-size: 14px;
+    font-weight: 400;
+}
+#contact .container .row .form form .input-with-icon input{
+    width: 608px;
+    height: 48px;
+    padding-left: 30px;
+    border: 1px solid gray;
+}
+
+#contact .container .row .form form .input-with-icon{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+#contact .container .row .form form .textarea-with-icon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+#contact .container .row .form form .textarea-with-icon textarea{
+    min-width: 608px;
+    padding-left: 30px;
+    padding-top: 10px;
+    border: 1px solid gray;
+}
+#contact .container .row .form form .textarea-with-icon i{
+    position: absolute;
+    left: 280px;
+    top: 15px;
+    font-size: 13px;
+}
+#contact .container .row .form form .input-with-icon i{
+    position: absolute;
+    left: 280px;
+    top: 15px;
+    font-size: 13px;
+}
+#contact #submit-button{
+    border: none;
+    position: absolute;
+    background-color: #333;
+    width: 140px;
+    height: 40px;
+    margin: 3% 35%;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+    justify-content: center;
+}
+#contact #submit-button:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+    cursor: pointer;
+}   
+/*       Form section ends                 */
+
+/* Footer start */
+#adress{
+    width: 100%;
+    height: 35vh;
+    background-color: #333;
+}
+#adress .container{
+    max-width: 80%;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#adress .container .title{
+    display: flex;
+    flex-direction: column;
+}
+#adress .container .title p{
+    color: white;
+}
+#adress .container .title a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:400;
+    margin-top: 15px;
+    letter-spacing: 1.4px;
+    color: white;
+}
+#adress .container .items ul li{
+    margin-top: 20px;
+    display: inline-block;
+    padding-left: 30px;
+}
+#adress .container .items ul li a{
+    text-decoration: none;
+    color:inherit;   
+}
+#adress .container .items ul li a:hover{
+    color: white;
+    transition: 0.3s;
+}
+#adress .container .items ul li a i{
+    font-size: 30px;
+}
+#adress .container .copyright{
+    margin-top: 30px;
+    color: white;
+}
